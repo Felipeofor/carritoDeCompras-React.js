@@ -7,6 +7,7 @@ const styles = {
         boxShadow: '0 5px 5px rgba(0, 0, 0, 0.1)',
         padding: '10px 15px',
         borderRadius: '5px',
+        margin:'10px',
     },
 
     img: {

@@ -3,6 +3,7 @@ import { Component } from 'react';
 const styles = {
     title: {
         marginBottom: '20px',
+        textAlign: 'center',
     }
 }
 

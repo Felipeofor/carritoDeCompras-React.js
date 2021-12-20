@@ -1,4 +1,6 @@
 import { Component } from 'react';
+import Logo from './Logo';
+import Carro from './Carro';
 
 const styles = {
     navBar: {
@@ -15,10 +17,14 @@ const styles = {
 
 class NavBar extends Component {
     render() {
+        const { carro, mostrarCarro, esCarroVisible } = this.props;
         return (
-            <nav style={styles.navBar}>
-                <p>Logo</p>
-                <p>Carro</p>
+            <nav style={ styles.navBar }>
+                <Logo/>
+                <Carro 
+                carro={ carro }
+                esCarroVisible={ esCarroVisible }
+                mostrarCarro={ mostrarCarro } />
             </nav>
         )
     }
